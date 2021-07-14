@@ -1,4 +1,4 @@
-const newReddit = "https://new.reddit.net";
+const newReddit = "https://new.reddit.com";
 const excludedPaths = ["/gallery", "/poll", "/rpan", "/settings", "/topics"];
 
 chrome.webRequest.onBeforeRequest.addListener(

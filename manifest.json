@@ -1,7 +1,7 @@
 {
-  "name": "Old Reddit Redirect",
-  "description": "Ensure Reddit always loads the old design",
-  "version": "1.4.0",
+  "name": "New Reddit Redirect",
+  "description": "Ensure Reddit always loads the new design.",
+  "version": "1.0.0",
   "manifest_version": 2,
   "background": { "scripts": ["background.js"] },
   "icons": {
@@ -11,10 +11,6 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "*://reddit.com/*",
-    "*://www.reddit.com/*",
-    "*://np.reddit.com/*",
-    "*://amp.reddit.com/*",
-    "*://i.reddit.com/*"
+    "*://old.reddit.com/*"
   ]
 }
