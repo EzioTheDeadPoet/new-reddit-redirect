@@ -1,25 +1,21 @@
-const oldReddit = "https://teddit.net";
+const newReddit = "https://new.reddit.net";
 const excludedPaths = ["/gallery", "/poll", "/rpan", "/settings", "/topics"];
 
 chrome.webRequest.onBeforeRequest.addListener(
   function (details) {
     const url = new URL(details.url);
 
-    if (url.hostname === "teddit.net") return;
+    if (url.hostname === "new.reddit.com") return;
 
     for (const path of excludedPaths) {
       if (url.pathname.indexOf(path) === 0) return;
     }
 
-    return { redirectUrl: oldReddit + url.pathname + url.search + url.hash };
+    return { redirectUrl: newReddit + url.pathname + url.search + url.hash };
   },
   {
     urls: [
-      "*://reddit.com/*",
-      "*://www.reddit.com/*",
-      "*://np.reddit.com/*",
-      "*://amp.reddit.com/*",
-      "*://i.reddit.com/*",
+      "*://old.reddit.com/*"
     ],
     types: [
       "main_frame",
