@@ -1,14 +1,16 @@
-# Old Reddit Redirect
+# New Reddit Redirect
 
-[Chrome extension](https://chrome.google.com/webstore/detail/old-reddit-redirect/dneaehbmnbhcippjikoajpoabadpodje)
 
-[Firefox extension](https://addons.mozilla.org/firefox/addon/old-reddit-redirect)
+Dislike OLD Reddit's ? NEW Reddit Redirect will ensure that you always load the new (new.reddit.com) design instead.
 
-Dislike Reddit's redesign? Old Reddit Redirect will ensure that you always load the old (old.reddit.com) design instead.
-
-Will force all reddit.com usage to old.reddit.com. Will work when navigating to the site, opening links, using old bookmarks. Works regardless of whether you are logged in or not, and in incognito mode.
+Will force all reddit.com usage to new.reddit.com. Will work when navigating to the site, opening links, using old bookmarks. Works regardless of whether you are logged in or not, and in incognito mode.
 
 #### Redirected domains
+
+- `old.reddit.com`
+
+
+#### Whitelisted domains
 
 - `reddit.com`
 - `www.reddit.com`
@@ -16,10 +18,7 @@ Will force all reddit.com usage to old.reddit.com. Will work when navigating to 
 - `amp.reddit.com`
 - `i.reddit.com`
 
-#### Whitelisted domains
-
-- `new.reddit.com`
-
 ## License
 
+For original code:
 Code copyright Tom Watson. Code released under [the MIT license](LICENSE.txt).
